@@ -1,3 +1,4 @@
+'use strict'
 /*
 As a user, upon first loading the app, I can see an empty shopping list
 As a user, I can enter items I need to purchase by entering text and hitting "Return" or clicking the "Add item" button
@@ -8,9 +9,21 @@ As a user, I can type in a search term and the displayed list will be filtered b
 As a user, I can edit the title of an item
 */
 
+//Make STORE array to keep item object literals.
+
+const STORE = [
+    {name: "flour", checked: false},
+    {name: "cocoa", checked: false},
+    {name: "baking soda", checked: false},
+    {name: "sea salt" checked: false}
+];
+
 //Make function stubs
 
-function renderShoppingList() {}
+function renderShoppingList() {
+    //console.log('`renderShoppingList'` ran');
+}
+
 function addItem() {}
 function deleteItem() {}
 function checkItemComplete() {}
