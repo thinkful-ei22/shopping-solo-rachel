@@ -6,65 +6,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <div class="container">
     <h1>Shopping List</h1>
 
-    <form id="js-shopping-list-form">
+    <form id="js-shopping-list-form" onsubmit="event.preventDefault();">
       <label for="shopping-list-entry">Add an item</label>
       <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="e.g., broccoli">
       <button type="submit">Add item</button>
     </form>
+    <button id="js-shopping-list-toggle">Toggle</button>
+    <input type="text" placeholder="Filter" id="js-shopping-list-filter">
 
     <ul class="shopping-list">
-      <li>
-        <span class="shopping-item">flour</span>
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>
-      <li>
-        <span class="shopping-item">cocoa</span>
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>
-      <li>
-        <span class="shopping-item shopping-item__checked">baking soda</span>
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>
-      <li>
-        <span class="shopping-item">sea salt</span>
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>
+    
     </ul>
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src = "index.js"></script>
 </body>
 </html>
